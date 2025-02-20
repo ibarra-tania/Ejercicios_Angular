@@ -1,0 +1,14 @@
+p{
+    font-size: 24px;
+    color: beige;
+}
+.textoResultado{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(139, 102, 167);
+}
+
+.contenedor{
+    padding: 20px;
+    margin: 100px;
+    background-color: rgb(221, 162, 206);
+}

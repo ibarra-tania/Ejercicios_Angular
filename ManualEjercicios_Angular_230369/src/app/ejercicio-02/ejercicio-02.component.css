@@ -1,0 +1,10 @@
+.textoSaludo{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textoResultado{
+    color: aqua;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,20 @@
+@if(isServerRunning){
+    <div class="run">
+        <h3>Yes, el servidor esta corriendo</h3>
+    </div>
+    @if (isLoggedIn) {
+        <div class="contenedor">
+            <p>Welcome, <span class="textoResultado">Tania</span></p>
+        </div>
+    }
+    @else{
+        <div class="contenedor-not">
+            <p>Deberías ingresar</p>
+        </div>
+    }
+}
+@else{
+    <div class="no-run">
+        <h3>No, el server no esta corriendo</h3>
+    </div>
+}
