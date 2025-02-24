@@ -7,6 +7,7 @@ import { Ejercicio03Component } from './ejercicio-03/ejercicio-03.component';
 import { Ejercicio04Component } from './ejercicio-04/ejercicio-04.component';
 import { Ejercicio05Component } from './ejercicio-05/ejercicio-05.component';
 import { Ejercicio06Component } from './ejercicio-06/ejercicio-06.component';
+import { Ejercicio07Component } from './ejercicio-07/ejercicio-07.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
@@ -14,7 +15,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 @Component({
   selector: 'app-root',
   standalone: true, 
-  imports: [RouterOutlet, Ejercicio01Component, Ejercicio02Component, Ejercicio03Component, Ejercicio04Component, Ejercicio05Component, Ejercicio06Component, MatButtonModule, ToolbarComponent],
+  imports: [RouterOutlet, Ejercicio01Component, Ejercicio02Component, Ejercicio03Component, Ejercicio04Component, Ejercicio05Component, Ejercicio06Component, Ejercicio07Component ,MatButtonModule, ToolbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
