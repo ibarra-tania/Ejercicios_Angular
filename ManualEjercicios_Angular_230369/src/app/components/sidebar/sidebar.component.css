@@ -1,5 +1,4 @@
-*{
-    background-color: rgb(158, 245, 158);
-    padding: 20px;
-    height: 95vh;
-}
+.hidden {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }

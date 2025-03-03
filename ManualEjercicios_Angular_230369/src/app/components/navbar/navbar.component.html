@@ -1,2 +1,25 @@
-<p>navbar works!</p>
-<button>Logout</button>
+<mat-toolbar class="bg-opacity-30 backdrop-blur-md bg-gray-900 text-white shadow-lg px-8 py-4 flex items-center justify-between rounded-b-xl">
+    <!-- Matrícula alineada a la izquierda con efecto neón -->
+    <span class="text-2xl font-extrabold tracking-widest text-cyan-400 glow-neon">230369</span>
+
+    <!-- Contenedor centrado de los botones con estilo minimalista -->
+    <div class="flex space-x-6">
+        <button mat-button class="px-5 py-2 rounded-full bg-transparent border border-cyan-400 hover:bg-cyan-400 hover:text-gray-900 transition-all">Ejercicios</button>
+        <button mat-button class="px-5 py-2 rounded-full bg-transparent border border-cyan-400 hover:bg-cyan-400 hover:text-gray-900 transition-all">Tareas</button>
+        <button mat-button class="px-5 py-2 rounded-full bg-transparent border border-cyan-400 hover:bg-cyan-400 hover:text-gray-900 transition-all">Examen</button>
+        <button mat-button class="px-5 py-2 rounded-full bg-transparent border border-cyan-400 hover:bg-cyan-400 hover:text-gray-900 transition-all">Acerca de</button>
+    </div>
+
+    <!-- Imagen de usuario con animación y borde degradado -->
+    <span class="flex items-center">
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="relative">
+            <img class="w-12 h-12 rounded-full border-4 border-transparent hover:border-cyan-400 transition-all" src="assets/img/yo.jpg" alt="User avatar">
+        </button>
+    </span>
+
+    <!-- Menú que se activará -->
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item class="hover:bg-gray-800">👤 Perfil</button>
+        <button mat-menu-item class="hover:bg-red-500 text-red-400 hover:text-white transition" (click)="logout()">Cerrar sesión</button>
+    </mat-menu>
+</mat-toolbar>
