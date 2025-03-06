@@ -12,9 +12,10 @@ export class Ejercicio09Component {
   count=0;
 
   onClick() {
-      this.count++;
-      this.incrementCountEvent.emit(this.count);
-    }
+    this.count++;
+    this.incrementCountEvent.emit(this.count);
+  }
+  
   addItem(){
     this.addItemEvent.emit('🐢');
   }
