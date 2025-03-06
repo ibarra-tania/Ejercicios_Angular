@@ -1,26 +1,26 @@
-<div *ngIf="isAuthenticated">
+<!-- <div *ngIf="isAuthenticated">
   <app-navbar></app-navbar>
 
   <div class="container">
-    <!-- Sidebar -->
+   
     <div class="sidebar" [ngClass]="{ 'collapsed': !isSidebarOpen }">
       <p>Contenido del sidebar</p>
     </div>
 
-    <!-- Contenido principal -->
+    
     <div class="content-container">
-      <!-- Navbar -->
+      
       <nav class="navbar">
         <button class="sidebar-toggle" (click)="toggleSidebar()">☰</button>
         <span class="navbar-title">Mi Aplicación</span>
       </nav>
 
-      <!-- Breadcrumb -->
+      
       <div class="breadcrumb">
         <span>Inicio</span> / <span>Sección</span> / <span>Página actual</span>
       </div>
 
-      <!-- Contenido -->
+      
       <p>Contenido principal aquí...</p>
 
       <footer class="footer">
@@ -36,15 +36,15 @@
 </div>
 
 
-<!-- Vista cuando no está autenticado -->
+
 <div *ngIf="!isAuthenticated" class="not-authenticated">
   <div class="container">
-    <!-- Contenido principal -->
+    
     <div class="content-container">
-      <!-- Botón de Iniciar sesión -->
+      
       <button class="login-button" (click)="login()">Iniciar sesión</button>
 
-      <!-- Contenido -->
+      
       <p>Contenido principal aquí...</p>
 
       <footer class="footer">
@@ -52,16 +52,12 @@
       </footer>
     </div>
   </div>
-</div>
+</div> -->
 
-<!-- <h1>
-  Hola, este es mi primer app en angular
-</h1>
-<h1>
-  Manual de prácticas
-</h1>
-<p>Elaborado por: <strong>Tania Ibarra Salgado</strong></p>
-<hr>
+<app-toolbar>
+  <hr>
+</app-toolbar>
+
 <h2>Ejercicio 1:</h2>
 <app-ejercicio-01>
 <hr>
@@ -96,4 +92,9 @@
   <hr>
 </app-ejercicio-07>
 
-<button mat-button>Aplasta</button> -->
+<hr>
+
+<h2>Ejercicio 08:</h2>
+<app-ejercicio-08 occupation="Angular Developer" name="Tania"></app-ejercicio-08>
+
+<button mat-button>Aplasta</button>

@@ -11,15 +11,13 @@ import { NgIf } from '@angular/common'; // Asegura compatibilidad con directivas
   imports: [MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule, NgIf], 
   template: `
     <mat-toolbar color="primary" class="sticky-toolbar">
-      <span class="text-xl font-bold">Mi plataforma</span>
+      
 
       <span class="spacer"></span>
 
       <nav>
-        <button mat-button>Ejercicios</button>
-        <button mat-button>Tareas</button>
-        <button mat-button>Examen</button>
-        <button mat-button>Acerca de</button>
+        <h1>Hola, este es mi primer app en angular, manual de prácticas</h1>
+        <p>Elaborado por: <strong>Tania Ibarra Salgado</strong></p>
       </nav>
 
       <span class="spacer"></span>

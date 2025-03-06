@@ -1,4 +1,6 @@
-<section (mouseover)="onMouseOver()">
+<section (mouseover)="onMouseOver()" (click)="greet()">
     <p> There's a secret message for you, hover to reveal <span> {{ message }} </span></p>
+    <span>{{hello}}</span>
 </section>
 <button (click) = "greet()">Aplasta</button>
+

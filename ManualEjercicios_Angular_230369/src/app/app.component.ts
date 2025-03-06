@@ -10,6 +10,8 @@ import { Ejercicio04Component } from './ejercicio-04/ejercicio-04.component';
 import { Ejercicio05Component } from './ejercicio-05/ejercicio-05.component';
 import { Ejercicio06Component } from './ejercicio-06/ejercicio-06.component';
 import { Ejercicio07Component } from './ejercicio-07/ejercicio-07.component';
+import { Ejercicio08Component } from './ejercicio-08/ejercicio-08.component';
+import { Ejercicio09Component } from './ejercicio-09/ejercicio-09.component';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -26,9 +28,9 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-root',
   standalone: true, 
-  imports: [RouterOutlet, Ejercicio01Component, CommonModule, FormsModule, Ejercicio02Component, Ejercicio03Component, Ejercicio04Component, Ejercicio05Component, Ejercicio06Component, Ejercicio07Component ,MatButtonModule, ToolbarComponent, NavbarComponent, SidebarComponent, PageContentComponent, FooterContentComponent, BreadconmbsComponent],
+  imports: [RouterOutlet, Ejercicio01Component, CommonModule, FormsModule, Ejercicio02Component, Ejercicio03Component, Ejercicio04Component, Ejercicio05Component, Ejercicio06Component, Ejercicio07Component, Ejercicio08Component, Ejercicio09Component, MatButtonModule, ToolbarComponent, NavbarComponent, SidebarComponent, PageContentComponent, FooterContentComponent, BreadconmbsComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: ''
 })
 export class AppComponent {
   isAuthenticated = true;

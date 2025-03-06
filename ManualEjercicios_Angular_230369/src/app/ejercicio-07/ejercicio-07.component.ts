@@ -8,10 +8,11 @@ import { Component } from '@angular/core';
 })
 export class Ejercicio07Component {
   message = ' ';
+  hello= ' ';
   onMouseOver() {
     this.message= 'Way to go 🚀';
   }
   greet(){
-    console.log('Hello, there 👋')
+    this.hello= 'Hello, there 👋';
   }
 }
